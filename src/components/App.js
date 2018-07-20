@@ -12,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div className="App-container">
-          <CheckoutTotal checkoutData={CHECKOUT_DATA}  className="CheckoutTotalComponent" />
+          <CheckoutTotal checkoutData={CHECKOUT_DATA} className="CheckoutTotalComponent" />
         </div>
       </div>
     );

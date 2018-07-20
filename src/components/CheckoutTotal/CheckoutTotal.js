@@ -7,7 +7,7 @@ import CheckoutItemsDetails from './CheckoutItemsDetails/CheckoutItemsDetails.js
 import CheckoutPromoCode from './CheckoutPromoCode/CheckoutPromoCode.js';
 import './CheckoutTotal.css';
 
-const DISCOUNT_CODE = 'DISCOUNT';
+export const DISCOUNT_CODE = 'DISCOUNT';
 const DISCOUNT_LABEL = '10%';
 const DISCOUNT_MULTIPLIER = 0.1;
 
