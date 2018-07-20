@@ -16,6 +16,18 @@ $border-color: #e6e7e8;
         }
     }
 
+    .discount-container {
+        position: relative;
+        margin-bottom: $line-margin;
+
+        .discount-value {
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+            color: $red;
+        }
+    }
+
     .pickup-savings-container {
         position: relative;
         margin-bottom: $line-margin;

@@ -1,7 +1,7 @@
 export const APPLY_DISCOUNT = 'discount/APPLY';
 
 const initialState = {
-    discountApplied: false
+    isDiscountApplied: false
 };
 
 export default (state = initialState, action) => {
@@ -9,7 +9,7 @@ export default (state = initialState, action) => {
         case APPLY_DISCOUNT:
             return {
                 ...state,
-                discountApplied: true
+                isDiscountApplied: true
             };
 
         default:

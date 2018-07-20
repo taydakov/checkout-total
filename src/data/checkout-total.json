@@ -1,15 +1,14 @@
 {
-    "subtotal": "$102.96",
-    "pickupSavings": "-$3.85",
-    "estTaxesFees": "$8.92",
+    "subtotal": "102.96",
+    "pickupSavings": "3.85",
+    "estTaxesFeesRate": "0.09",
     "zipCode": "94085",
-    "estTotal": "$108.03",
     "items": [
         {
             "title": "OFM Essentials Racecar-Style Leather Gaming Chair, Red",
             "imgUrl": "https://i5.walmartimages.com/asr/58ed28c8-42fa-4966-902c-292940257bb1_1.ef2b733f30c41bfa79d99303e6a11627.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
-            "price": "$99.11",
-            "originalPrice": "$102.96",
+            "price": "99.11",
+            "originalPrice": "102.96",
             "qty": "1"
         }
     ]

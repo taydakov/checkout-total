@@ -7,6 +7,14 @@
       position: absolute;
       right: 0;
       font-weight: bold; }
+  .CheckoutSummary .discount-container {
+    position: relative;
+    margin-bottom: 6px; }
+    .CheckoutSummary .discount-container .discount-value {
+      position: absolute;
+      right: 0;
+      font-weight: bold;
+      color: #de1c24; }
   .CheckoutSummary .pickup-savings-container {
     position: relative;
     margin-bottom: 6px; }
