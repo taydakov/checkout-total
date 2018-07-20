@@ -36,7 +36,7 @@ export default class CheckoutPromoCode extends Component {
               <span className="showhide-label">Hide promo code</span>
               <span className="showhide-icon">−</span>
             </div>
-            <div className="item-wrapper">
+            <div className="promo-wrapper">
               <span className="promo-label">Promo code</span>
               <div className="promo-input-wrapper">
                 <input className="promo-input" />
