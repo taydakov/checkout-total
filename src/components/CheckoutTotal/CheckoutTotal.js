@@ -8,6 +8,7 @@ import CheckoutPromoCode from '../CheckoutPromoCode/CheckoutPromoCode.js';
 import './CheckoutTotal.css';
 
 const DISCOUNT_CODE = 'DISCOUNT';
+const DISCOUNT_LABEL = '10%';
 const DISCOUNT_MULTIPLIER = 0.1;
 
 class CheckoutTotal extends Component {
@@ -44,6 +45,7 @@ class CheckoutTotal extends Component {
           isDiscountApplied={this.props.isDiscountApplied}
           subtotalAmount={this.getSubtotalAmount()}
           pickupDiscountAmount={this.getPickupDiscountAmount()}
+          discountLabel={DISCOUNT_LABEL}
           discountAmount={this.getDiscountAmount()}
           estTaxesFeesAmount={this.getEstTaxesFeesAmount()}
           zipCode={this.props.checkoutData.zipCode}

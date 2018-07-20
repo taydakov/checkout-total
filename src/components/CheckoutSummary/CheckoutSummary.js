@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './CheckoutSummary.css';
 
 const PICKUP_POPUP_TIME = 2000;
-const DISCOUNT_LABEL = '10%';
 
 export default class CheckoutSummary extends Component {
   constructor(props) {
@@ -32,7 +31,7 @@ export default class CheckoutSummary extends Component {
         </div>
         {this.props.isDiscountApplied &&
           <div className="discount-container">
-            <span className="discount-label">Discount ({DISCOUNT_LABEL})</span>
+            <span className="discount-label">Discount ({this.props.discountLabel})</span>
             <span className="discount-value">-${this.props.discountAmount.toFixed(2)}</span>
           </div>
         }
