@@ -25,16 +25,19 @@ export default class CheckoutItemDetails extends Component {
     let items = [];
 
     if (this.state.expanded) {
-      for (const itemData of this.props.itemsData) {
+      for (const itemId in this.props.itemsData) {
+        let itemData = this.props.itemsData[itemId];
         items.push(
-          <div className="item-wrapper">
-            <div className="item-img">
-              <img src={itemData.imgUrl} alt={itemData.title} />
+          <div key={itemId} className="item-wrapper">
+            <div className="item-img-wrapper">
+              <img className="item-img" src={itemData.imgUrl} alt={itemData.title} />
             </div>
             <div className="item-summary">
               <div className="item-title">{itemData.title}</div>
-              <div className="item-price">{itemData.price}</div>
-              <div className="item-qty">{itemData.qty}</div>
+              <div className="item-priceqty-container">
+                <span className="item-price">{itemData.price}</span>
+                <span className="item-qty">Qty: {itemData.qty}</span>
+              </div>
               <div className="item-original-price">{itemData.originalPrice}</div>
             </div>
           </div>
@@ -45,16 +48,16 @@ export default class CheckoutItemDetails extends Component {
     return (
       <div className="CheckoutItemDetails">
         {!this.state.expanded &&
-          <div className="show-label-wrapper" onClick={this.onShowClick.bind(this)}>
-            <span className="show-label">See item details</span>
-            <span className="show-icon">+</span>
+          <div className="showhide-label-wrapper" onClick={this.onShowClick.bind(this)}>
+            <span className="showhide-label">See item details</span>
+            <span className="showhide-icon">+</span>
           </div>
         }
         {this.state.expanded &&
           <div>
-            <div className="hide-label-wrapper" onClick={this.onHideClick.bind(this)}>
-              <span className="hide-label">Hide item details</span>
-              <span className="hide-icon">-</span>
+            <div className="showhide-label-wrapper" onClick={this.onHideClick.bind(this)}>
+              <span className="showhide-label">Hide item details</span>
+              <span className="showhide-icon">−</span>
             </div>
             <div className="items-wrapper">
               {items}

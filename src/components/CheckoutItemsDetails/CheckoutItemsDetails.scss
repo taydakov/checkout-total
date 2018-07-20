@@ -1,0 +1,60 @@
+$border-color: #e6e7e8;
+
+.CheckoutItemDetails {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color;
+
+    .showhide-label-wrapper {
+        text-align: left;
+
+        .showhide-label {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .showhide-icon {
+            font-size: 1.5em;
+            margin-left: 5px;
+        }
+    }
+
+    .item-wrapper {
+        padding-top: 10px;
+
+        .item-img-wrapper {
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+        }
+
+        .item-summary {
+            display: inline-block;
+            width: 60%;
+            text-align: left;
+        }
+
+        .item-priceqty-container {
+            position: relative;
+        }
+
+        .item-qty {
+            position: absolute;
+            right: 0;
+        }
+
+        .item-price {
+            font-weight: bold;
+        }
+
+        .item-original-price {
+            text-decoration: line-through;
+            color: grey;
+            font-weight: bold;
+        }
+
+        .item-img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}

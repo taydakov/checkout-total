@@ -1,0 +1,8 @@
+.CheckoutPromoCode .showhide-label-wrapper {
+  text-align: left; }
+  .CheckoutPromoCode .showhide-label-wrapper .showhide-label {
+    text-decoration: underline;
+    cursor: pointer; }
+  .CheckoutPromoCode .showhide-label-wrapper .showhide-icon {
+    font-size: 1.5em;
+    margin-left: 5px; }
