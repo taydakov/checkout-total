@@ -1,5 +1,6 @@
 $red: #de1c24;
 $line-margin: 6px;
+$border-color: #e6e7e8;
 
 .CheckoutSummary {
     text-align: left;
@@ -29,6 +30,18 @@ $line-margin: 6px;
             right: 0;
             font-weight: bold;
             color: $red;
+        }
+
+        .pickup-popup {
+            position: absolute;
+            z-index: 1000;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+            left: -50px;
+            width: 200px;
+            padding: 20px 15px 20px 25px;
+            background-color: rgba(255, 255, 255, 1.0);
+            top: 30px;
         }
     }
 

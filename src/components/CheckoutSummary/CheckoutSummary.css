@@ -18,6 +18,16 @@
       right: 0;
       font-weight: bold;
       color: #de1c24; }
+    .CheckoutSummary .pickup-savings-container .pickup-popup {
+      position: absolute;
+      z-index: 1000;
+      border: 1px solid #e6e7e8;
+      border-radius: 5px;
+      left: -50px;
+      width: 200px;
+      padding: 20px 15px 20px 25px;
+      background-color: white;
+      top: 30px; }
   .CheckoutSummary .est-taxes-fees-container {
     position: relative; }
     .CheckoutSummary .est-taxes-fees-container .est-taxes-fees-value {
