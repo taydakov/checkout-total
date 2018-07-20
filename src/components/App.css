@@ -3,19 +3,19 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+  height: 30px; }
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 30px;
+  padding: 5px;
   color: white; }
 
-.App-title {
-  font-size: 1.5em; }
-
-.App-intro {
-  font-size: large; }
+.App-container {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+  font-size: 14px; }
 
 @keyframes App-logo-spin {
   from {
