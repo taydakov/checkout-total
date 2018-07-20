@@ -8,3 +8,20 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   font-family: myriad-pro, BogleWeb, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .CheckoutTotal .est-total-container {
+    position: relative;
+    height: 1.5em;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #e6e7e8;
+    text-align: left;
+    font-weight: bold;
+    overflow: auto; }
+    .CheckoutTotal .est-total-container .est-total-label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .CheckoutTotal .est-total-container .est-total-value {
+      position: absolute;
+      right: 0;
+      font-size: 1.5em; }
