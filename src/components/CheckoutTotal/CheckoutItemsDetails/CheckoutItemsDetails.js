@@ -35,10 +35,10 @@ export default class CheckoutItemDetails extends Component {
             <div className="item-summary">
               <div className="item-title">{itemData.title}</div>
               <div className="item-priceqty-container">
-                <span className="item-price">{itemData.price}</span>
+                <span className="item-price">${itemData.price}</span>
                 <span className="item-qty">Qty: {itemData.qty}</span>
               </div>
-              <div className="item-original-price">{itemData.originalPrice}</div>
+              <div className="item-original-price">${itemData.originalPrice}</div>
             </div>
           </div>
         )

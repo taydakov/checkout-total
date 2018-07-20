@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { applyDiscount } from '../../store/modules/discount';
-import CheckoutSummary from '../CheckoutSummary/CheckoutSummary.js';
-import CheckoutItemsDetails from '../CheckoutItemsDetails/CheckoutItemsDetails.js';
-import CheckoutPromoCode from '../CheckoutPromoCode/CheckoutPromoCode.js';
+import CheckoutSummary from './CheckoutSummary/CheckoutSummary.js';
+import CheckoutItemsDetails from './CheckoutItemsDetails/CheckoutItemsDetails.js';
+import CheckoutPromoCode from './CheckoutPromoCode/CheckoutPromoCode.js';
 import './CheckoutTotal.css';
 
 const DISCOUNT_CODE = 'DISCOUNT';
