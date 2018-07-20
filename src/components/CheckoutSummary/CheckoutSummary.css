@@ -1,0 +1,28 @@
+.CheckoutSummary {
+  text-align: left; }
+  .CheckoutSummary .subtotal-container {
+    position: relative;
+    margin-bottom: 6px; }
+    .CheckoutSummary .subtotal-container .subtotal-value {
+      position: absolute;
+      right: 0;
+      font-weight: bold; }
+  .CheckoutSummary .pickup-savings-container {
+    position: relative;
+    margin-bottom: 6px; }
+    .CheckoutSummary .pickup-savings-container .pickup-savings-label {
+      text-decoration: underline;
+      cursor: pointer; }
+    .CheckoutSummary .pickup-savings-container .pickup-savings-value {
+      position: absolute;
+      right: 0;
+      font-weight: bold;
+      color: #de1c24; }
+  .CheckoutSummary .est-taxes-fees-container {
+    position: relative; }
+    .CheckoutSummary .est-taxes-fees-container .est-taxes-fees-value {
+      position: absolute;
+      right: 0;
+      font-weight: bold; }
+  .CheckoutSummary .zipcode-label {
+    margin-bottom: 6px; }
