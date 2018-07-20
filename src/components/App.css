@@ -12,7 +12,8 @@
   color: white; }
 
 .App-container {
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   margin: auto;
   position: relative;
   font-size: 14px; }
