@@ -11,7 +11,7 @@ const DISCOUNT_CODE = 'DISCOUNT';
 const DISCOUNT_MULTIPLIER = 0.1;
 
 class CheckoutTotal extends Component {
-  onApplyCode(code) {
+  onSubmitPromoCode(code) {
     if (code === DISCOUNT_CODE) {
       this.props.applyDiscount();
     }
@@ -53,7 +53,7 @@ class CheckoutTotal extends Component {
           <span className="est-total-value">${this.getEstTotal().toFixed(2)}</span>
         </div>
         <CheckoutItemsDetails itemsData={this.props.checkoutData.items} />
-        <CheckoutPromoCode onApplyCode={this.onApplyCode.bind(this)}/>
+        <CheckoutPromoCode onSubmit={this.onSubmitPromoCode.bind(this)}/>
       </div>
     );
   }

@@ -5,7 +5,8 @@ export default class CheckoutPromoCode extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      expanded: false
+      expanded: false,
+      codeInputValue: ''
     };
   } 
 
@@ -19,6 +20,16 @@ export default class CheckoutPromoCode extends Component {
     this.setState({
       expanded: false
     })
+  }
+
+  onCodeChange(event) {
+    this.setState({codeInputValue: event.target.value});
+  }
+
+  onApplyClick() {
+    if (this.props.onSubmit) {
+      this.props.onSubmit(this.state.codeInputValue);
+    }
   }
 
   render() {
@@ -39,8 +50,8 @@ export default class CheckoutPromoCode extends Component {
             <div className="promo-wrapper">
               <span className="promo-label">Promo code</span>
               <div className="promo-input-wrapper">
-                <input className="promo-input" />
-                <button className="promo-apply-button">Apply</button>
+                <input type="text" className="promo-input" value={this.state.codeInputValue} onChange={this.onCodeChange.bind(this)}/>
+                <button className="promo-apply-button" onClick={this.onApplyClick.bind(this)}>Apply</button>
               </div>
             </div>
           </div>
