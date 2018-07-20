@@ -22,14 +22,14 @@ const CHECKOUT_DATA = {
 class CheckoutSummary extends React.Component {
   render() {
     return (
-      <div>
-        <span class="subtotal-label">Subtotal</span>
-        <span class="subtotal-value">{this.props.summaryData.subtotal}</span>
-        <span class="pickup-savings-label">Pickup Savings</span>
-        <span class="pickup-savings-value">{this.props.summaryData.pickupSavings}</span>
-        <span class="est-taxes-fees-label">Est. taxes & fees</span>
-        <span class="est-taxes-fees-value">{this.props.summaryData.estTaxesFees}</span>
-        <span class="zipcode-label">(Based on {this.props.summaryData.zipCode})</span>
+      <div className="CheckoutSummary">
+        <span className="subtotal-label">Subtotal</span>
+        <span className="subtotal-value">{this.props.summaryData.subtotal}</span>
+        <span className="pickup-savings-label">Pickup Savings</span>
+        <span className="pickup-savings-value">{this.props.summaryData.pickupSavings}</span>
+        <span className="est-taxes-fees-label">Est. taxes & fees</span>
+        <span className="est-taxes-fees-value">{this.props.summaryData.estTaxesFees}</span>
+        <span className="zipcode-label">(Based on {this.props.summaryData.zipCode})</span>
       </div>
     );
   }
@@ -38,24 +38,24 @@ class CheckoutSummary extends React.Component {
 class CheckoutItemDetails extends React.Component {
   render() {
     return (
-      <div>
-        <div class="show-label-wrapper">
-          <span class="show-label">See item details</span>
-          <span class="show-icon">+</span>
+      <div className="CheckoutItemDetails">
+        <div className="show-label-wrapper">
+          <span className="show-label">See item details</span>
+          <span className="show-icon">+</span>
         </div>
-        <div class="hide-label-wrapper">
-          <span class="hide-label">Hide item details</span>
-          <span class="hide-icon">-</span>
+        <div className="hide-label-wrapper">
+          <span className="hide-label">Hide item details</span>
+          <span className="hide-icon">-</span>
         </div>
-        <div class="item-wrapper">
-          <div class="item-img">
-            <img src={this.props.itemData.imgUrl} />
+        <div className="item-wrapper">
+          <div className="item-img">
+            <img src={this.props.itemData.imgUrl} alt={this.props.itemData.title} />
           </div>
-          <div class="item-summary">
-            <div class="item-title">{this.props.itemData.title}</div>
-            <div class="item-price">{this.props.itemData.price}</div>
-            <div class="item-qty">{this.props.itemData.qty}</div>
-            <div class="item-original-price">{this.props.itemData.originalPrice}</div>
+          <div className="item-summary">
+            <div className="item-title">{this.props.itemData.title}</div>
+            <div className="item-price">{this.props.itemData.price}</div>
+            <div className="item-qty">{this.props.itemData.qty}</div>
+            <div className="item-original-price">{this.props.itemData.originalPrice}</div>
           </div>
         </div>
       </div>
@@ -66,20 +66,20 @@ class CheckoutItemDetails extends React.Component {
 class CheckoutPromoCode extends React.Component {
   render() {
     return (
-      <div>
-        <div class="show-label-wrapper">
-          <span class="show-label">Apply promo code</span>
-          <span class="show-icon">+</span>
+      <div className="CheckoutPromoCode">
+        <div className="show-label-wrapper">
+          <span className="show-label">Apply promo code</span>
+          <span className="show-icon">+</span>
         </div>
-        <div class="hide-label-wrapper">
-          <span class="hide-label">Hide promo code</span>
-          <span class="hide-icon">-</span>
+        <div className="hide-label-wrapper">
+          <span className="hide-label">Hide promo code</span>
+          <span className="hide-icon">-</span>
         </div>
-        <div class="item-wrapper">
-          <span class="promo-label">Promo code</span>
-          <div class="promo-input-wrapper">
-            <input class="promo-input" />
-            <button class="promo-apply-button">Apply</button>
+        <div className="item-wrapper">
+          <span className="promo-label">Promo code</span>
+          <div className="promo-input-wrapper">
+            <input className="promo-input" />
+            <button className="promo-apply-button">Apply</button>
           </div>
         </div>
       </div>
@@ -90,10 +90,10 @@ class CheckoutPromoCode extends React.Component {
 class CheckoutTotal extends React.Component {
   render() {
     return (
-      <div>
+      <div className="CheckoutTotal">
         <CheckoutSummary summaryData={this.props.checkoutData} />
-        <span class="est-total-label">Est. total</span>
-        <span class="est-total-value">{this.props.checkoutData.estTotal}</span>
+        <span className="est-total-label">Est. total</span>
+        <span className="est-total-value">{this.props.checkoutData.estTotal}</span>
         <CheckoutItemDetails itemData={this.props.checkoutData.items[0]} />
         <CheckoutPromoCode />
       </div>
@@ -109,9 +109,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
+        <div className="App-intro">
           <CheckoutTotal checkoutData={CHECKOUT_DATA} />
-        </p>
+        </div>
       </div>
     );
   }
